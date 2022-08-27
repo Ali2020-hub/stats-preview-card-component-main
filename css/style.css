@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* // 400 700 */
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  min-height: calc(100vh - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: hsl(244, 38%, 16%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 2rem;
+}
+.container .box1 {
+  padding: 13%;
+}
+.container .box1 h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.container .box1 h2 span {
+  color: hsl(277, 64%, 61%, 0.6);
+}
+.container .box1 .main-p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 6rem;
+  line-height: 1.6;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  position: relative;
+}
+.image::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%, 0.6);
+}
+.records {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.xc {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0.4rem;
+}
+.sec-p {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media (max-width:425px){
+  body {
+    text-align: center;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image {
+    order: -1;
+  }
+  .records {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .records div {
+    margin-top: 20px;
+  }
+  .container .box1 .main-p {
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
